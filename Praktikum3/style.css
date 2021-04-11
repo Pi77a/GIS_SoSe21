@@ -1,0 +1,223 @@
+body{
+    background-image: url(data/bg.png);
+    font-family: Arial, Helvetica, sans-serif;
+    height: fit-content;
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+  display: block;
+  background-color:rgb(173, 0, 0);
+  text-align: center;
+  height: 800px;
+  width: 800px;
+  margin-top: -450px;
+  margin-bottom: 60px;
+  border-radius: 0px 0px 50% 50%;
+  float: left;
+  z-index: 5;
+}
+nav div {
+  margin-top: 500px;
+  color: #fff;
+  font-size:6em;
+  padding:0;
+  text-align:center;
+}
+nav div h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+
+}
+
+header {
+  position: -webkit-sticky; 
+  position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    display: block;
+    
+}
+header ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    background-color: rgb(71, 71, 71);
+    float: right;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+  
+header li {
+    float: right;
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 110px;
+    
+  }
+  header li:first-child {
+    border-right: none;
+  }
+  
+  header li a {
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  header a:hover {
+      background-color: rgb(107, 107, 107);
+  }
+  header  .active {
+      color:rgb(173, 0, 0);
+  }
+
+.List {
+  list-style-type: decimal;
+    display: inline;
+    border-left: 5px solid rgb(173, 0, 0);
+    border-right: 5px solid rgb(173, 0, 0) ;
+  background-color: #f1f1f1c9;
+  padding: 10px 11px 10px 20px;
+  width: 200px;
+  float:left;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 0px;
+ 
+}
+h2 {
+  display: block;
+  text-align: left;
+  color: rgb(173, 0, 0);
+  margin-top: 70px;
+  margin-bottom: 10px;
+  height: fit-content;
+}
+
+
+
+.Steckbriefüberschrift{
+  display: inline;
+  text-align: center;
+  margin: 10px 80px 10px 80px;
+}   
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+
+div.gallery img {
+  width: 250px;
+  height: 200px
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.social{
+  width: 50px;
+  height: auto;
+  filter: opacity(60%);
+  z-index: 3;
+
+}
+.social:hover {
+  filter: brightness(27%);
+  z-index: 3; 
+}
+span{
+  margin-top: 40px;
+}
+table {
+  margin-left: 31%;
+  width: 37%;
+  margin-bottom: 20px;
+}
+.Museum{
+  height: 240px;
+  margin-bottom: 40px;
+  display: block;
+}
+.MeinBild{
+  width: 600px;
+  height: auto;
+  margin-bottom: 40px;
+}
+#Listensindcool {
+  background-color: rgba(180, 180, 180, 0.493);
+  height: 200px;
+  padding: 10px 0px 10px 0px;
+  border: 2px  solid rgba(71, 71, 71, 0.068);
+  margin-bottom: 50px;
+}
+#TOP {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+#Text {
+  margin-bottom: 30px;
+}
+#Kontakt{
+  text-align: left;
+  color: rgb(173, 0, 0);
+  margin-top: 500px;
+}
+.contact{
+  display: block;
+  
+  width: 200px;
+  margin-bottom: 0px;
+  border-style: none;
+  
+}
+
+textarea {
+  height:50px;
+  width: 300px;
+  display: inline-block;
+  margin-right: 600px;
+  border-style: none;
+  display: block;
+  background-color: rgb(177, 177, 177)
+}
+.button{
+  float: left;
+  display: block;
+  margin-top: 3px;
+  border-style: none;
+  color: white;
+  margin-bottom: 50px;
+}
+#Datenschutz{
+  display: block;
+  float: left;
+  font-size: 10px;
+  margin-right: 500px;
+}
+input{
+  background-color: rgb(177, 177, 177);
+}
+::placeholder{
+  color: white;
+}
+header ol:first-child:hover {
+  border-radius: 0px 0px 15px 0px;
+
+}header ol:first-child:hover {
+  border-radius: 0px 0px 15px 0px;
+}
