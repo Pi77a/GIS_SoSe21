@@ -134,7 +134,6 @@ div.desc {
   height: auto;
   filter: opacity(60%);
   z-index: 3;
-
 }
 .social:hover {
   filter: brightness(27%);
@@ -221,3 +220,5 @@ header ol:first-child:hover {
 }header ol:first-child:hover {
   border-radius: 0px 0px 15px 0px;
 }
+
+
