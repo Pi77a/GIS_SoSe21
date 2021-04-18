@@ -50,6 +50,7 @@ header {
     
 }
 header ol {
+  display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -66,7 +67,7 @@ header li {
     width: 110px;
     
   }
-  header li:first-child {
+  header li:last-child {
     border-right: none;
   }
   
@@ -130,6 +131,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   width: 31%;
+  height: 250px;
   box-shadow: 4px 4px 5px grey;
 }
 
@@ -174,9 +176,11 @@ table {
   display: block;
 }
 .MeinBild{
-  width: 600px;
+  width: 80%;
   height: auto;
   margin-bottom: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #Listensindcool {
   background-color: rgba(180, 180, 180, 0.493);
@@ -265,10 +269,6 @@ video {
   box-shadow: 2px 2px 5px grey;
   margin-bottom: 20px;
 }
-footer{
-  height: 200px;
-  background-color: rgb(173, 0, 0);
-}
 #Kontakt {
   padding-left: 10px;
   padding-bottom: 20px;
@@ -301,11 +301,10 @@ header>ol:hover {
     width: 100%;
   }
   div.Museum{
-    height: 850px;
+    height: fit-content;
     flex-direction: column;
     width: 90%;
     margin: 5%;
-    margin-bottom: 80px;
   }
   div.gallery{
     width: 100%;
@@ -337,12 +336,12 @@ header>ol:hover {
     width: 100%;
   }
   #Listensindcool{
-    display: flex;
     width: 90%;
     margin: 5%;
   }
   .List {
     width: 80%;
+    margin: 4%;
   }
   .Steckbriefüberschrift{
     display:block;
@@ -352,6 +351,11 @@ header>ol:hover {
     border-bottom-width: 2px;
     border-color: black;
   }   
-
+  header ol{
+    width: 100%;
+  }
+  header ol li{
+    float: left;
+  }
 
 }
