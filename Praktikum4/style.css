@@ -301,13 +301,20 @@ header>ol:hover {
     width: 100%;
   }
   div.Museum{
-    width: 100%;
+    height: 900px;
     flex-direction: column;
+    width: 90%;
+    margin: 5%;
+    margin-bottom: 80px;
   }
   div.gallery{
     width: 100%;
     height: auto;
     
+  }
+  div.gallery img {
+    width: 100%;
+    height: 250px;
   }
   nav {
     width: 100%;
@@ -316,5 +323,9 @@ header>ol:hover {
   nav div{
     font-size: 2em;
     margin-top: 100px;
+  }
+  video{
+    width: 90%;
+    margin: 5%;
   }
 }
