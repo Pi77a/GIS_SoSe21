@@ -292,8 +292,78 @@ header>ol:hover {
 #first:hover {
   border-radius: 0px 0px 0px 15px;
 }
+@media all and (max-width: 600px){
+  body{
+    width: 100%;
+  }
+  #Background1{
+    width: 100%;
+  }
+  #Background2{
+    width: 100%;
+  }
+  div.Museum{
+    height: fit-content;
+    flex-direction: column;
+    width: 90%;
+    margin: 5%;
+  }
+  div.gallery{
+    width: 100%;
+    height: auto;
+    
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    width: 100%;
+    height: 350px
+  }
+  nav div{
+    font-size: 5em;
+    margin-top: 100px;
+  }
+  video{
+    width: 90%;
+    margin: 5%;
+  }
+  .MeinBild{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+  }
+  #Text{
+    width: 100%;
+  }
+  #Listensindcool{
+    width: 90%;
+    margin: 5%;
+  }
+  .List {
+    width: 80%;
+    margin: 4%;
+  }
+  .Steckbriefüberschrift{
+    display:block;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+  }   
+  header ol{
+    width: 100%;
+    justify-content: center;
+  }
+  header ol li{
+    float: left;
+  }
 
-@media all and (max-width: 800px) {
+}
+
+@media all and (max-width: 600px) {
   body{
     width: 100%;
   }
@@ -353,6 +423,7 @@ header>ol:hover {
   }   
   header ol{
     width: 100%;
+    justify-content: center;
   }
   header ol li{
     float: left;
