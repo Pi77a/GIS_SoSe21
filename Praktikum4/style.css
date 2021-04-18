@@ -5,6 +5,12 @@ body{
     width: 800px;
     margin: auto;
     text-align: center;
+    
+}
+.Navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 nav {
@@ -12,7 +18,7 @@ nav {
   background-color:rgb(173, 0, 0);
   text-align: center;
   height: 800px;
-  width: 800px;
+  width: 100%;
   margin-top: -450px;
   margin-bottom: 60px;
   border-radius: 0px 0px 50% 50%;
@@ -124,7 +130,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 252px;
+  width: 31%;
   box-shadow: 4px 4px 5px grey;
 }
 
@@ -133,8 +139,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 250px;
-  height: 200px
+  width: 100%;
+  height: 200px;
 }
 
 div.desc {
@@ -238,6 +244,11 @@ input{
   margin-top: 420px;
   margin-bottom: 30px;
   padding-bottom: 1px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #Background2{
   background-color: rgba(255, 255, 255, 0.445);
@@ -245,7 +256,12 @@ input{
   margin-top: 420px;
   margin-bottom: 30px;
   height: 330px;
+  width: 800px;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 video {
   box-shadow: 2px 2px 5px grey;
@@ -276,4 +292,10 @@ header>ol:hover {
 }
 #first:hover {
   border-radius: 0px 0px 0px 15px;
+}
+
+@media all and (max-width: 600px) {
+  div.gallery{
+    width: 100%;
+  }
 }
