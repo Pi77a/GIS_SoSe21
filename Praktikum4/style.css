@@ -301,7 +301,7 @@ header>ol:hover {
     width: 100%;
   }
   div.Museum{
-    height: 900px;
+    height: 850px;
     flex-direction: column;
     width: 90%;
     margin: 5%;
@@ -314,18 +314,43 @@ header>ol:hover {
   }
   div.gallery img {
     width: 100%;
-    height: 250px;
+    height: auto;
   }
   nav {
     width: 100%;
     height: 300px
   }
   nav div{
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 100px;
   }
   video{
     width: 90%;
     margin: 5%;
   }
+  .MeinBild{
+    width: 90%;
+    height: auto;
+    margin: 5%;
+  }
+  #Text{
+    width: 100%;
+  }
+  .Listensindcool{
+    display: flex;
+    width: 90%;
+    margin: 5%;
+  }
+  .Listensindcool #List {
+    width: 80%;
+  }
+  .Steckbriefüberschrift{
+    display:block;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+  }   
+
 }
