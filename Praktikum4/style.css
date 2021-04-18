@@ -272,9 +272,11 @@ video {
 #Kontakt {
   padding-left: 10px;
   padding-bottom: 20px;
-}
+  width: 100%;
+  }
 #Container{
   padding-left: 10px;
+  width: 100%;
 }
 #mess {
   padding-left: 10px;
@@ -292,6 +294,7 @@ header>ol:hover {
 #first:hover {
   border-radius: 0px 0px 0px 15px;
 }
+
 @media all and (max-width: 800px){
   body{
     width: 100%;
@@ -340,6 +343,7 @@ header>ol:hover {
   #Listensindcool{
     width: 90%;
     margin: 5%;
+    height: fit-content;
   }
   .List {
     width: 80%;
@@ -408,6 +412,7 @@ header>ol:hover {
   #Listensindcool{
     width: 90%;
     margin: 5%;
+    height: fit-content;
   }
   .List {
     width: 80%;
