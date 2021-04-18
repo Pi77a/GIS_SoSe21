@@ -302,11 +302,17 @@ header>ol:hover {
   #Background1{
     width: 100%;
   }
+  div.Museum{
+    flex-direction: column;
+  }
   div.gallery{
     width: 100%;
+    height: auto;
+    
   }
   nav {
     width: 100%;
-    
+    height: 100%;
+
   }
 }
