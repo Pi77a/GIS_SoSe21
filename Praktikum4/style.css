@@ -124,12 +124,13 @@ header li {
   text-align: center;
   margin: 10px 77px 10px 77px;
 }   
-
+div.Museum{
+  display: flex;
+}
 
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
   width: 31%;
   box-shadow: 4px 4px 5px grey;
 }
@@ -295,7 +296,17 @@ header>ol:hover {
 }
 
 @media all and (max-width: 600px) {
+  body{
+    width: 100%;
+  }
+  #Background1{
+    width: 100%;
+  }
   div.gallery{
     width: 100%;
+  }
+  nav {
+    width: 100%;
+    
   }
 }
