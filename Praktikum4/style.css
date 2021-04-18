@@ -293,7 +293,7 @@ header>ol:hover {
   border-radius: 0px 0px 0px 15px;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
   body{
     width: 100%;
   }
