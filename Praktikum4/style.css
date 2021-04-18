@@ -220,16 +220,15 @@ textarea {
 .button{
   float: left;
   display: block;
-  margin-top: 3px;
   border-style: none;
   color: white;
-  margin-bottom: 50px;
+  margin: 0px;
 }
 #Datenschutz{
   display: block;
   float: left;
   font-size: 10px;
-  margin-right: 500px;
+  margin-right: 600px;
 }
 input{
   background-color: rgb(177, 177, 177);
@@ -279,6 +278,7 @@ footer{
 }
 #mess {
   padding-left: 10px;
+  margin-right: 600px;
 }
 .button:hover{
   background-color: rgb(71, 71, 71);
@@ -336,12 +336,12 @@ header>ol:hover {
   #Text{
     width: 100%;
   }
-  .Listensindcool{
+  #Listensindcool{
     display: flex;
     width: 90%;
     margin: 5%;
   }
-  .Listensindcool #List {
+  .List {
     width: 80%;
   }
   .Steckbriefüberschrift{
@@ -352,5 +352,6 @@ header>ol:hover {
     border-bottom-width: 2px;
     border-color: black;
   }   
+
 
 }
