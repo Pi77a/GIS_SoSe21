@@ -388,7 +388,9 @@ header>ol:hover {
     width: 100%;
     height: 50px;
   }
-
+  #Kontakt{
+    margin-right: 0px;
+  }
 }
 
 @media all and (max-width: 600px) {
