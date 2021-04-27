@@ -85,7 +85,35 @@ header li {
       color:rgb(173, 0, 0);
   }
 
-.List {
+.List1 {
+  list-style-type: decimal;
+  display: inline;
+  border-left: 5px solid rgb(173, 0, 0);
+  border-right: 5px solid rgb(173, 0, 0) ;
+  background-color: #f1f1f1c9;
+  padding: 10px 11px 10px 20px;
+  width: 160px;
+  float:left;
+  margin-left: 28px;
+  margin-right: 28px;
+  border-radius: 0px;
+ 
+}
+.List2 {
+  list-style-type: decimal;
+  display: inline;
+  border-left: 5px solid rgb(173, 0, 0);
+  border-right: 5px solid rgb(173, 0, 0) ;
+  background-color: #f1f1f1c9;
+  padding: 10px 11px 10px 20px;
+  width: 160px;
+  float:left;
+  margin-left: 28px;
+  margin-right: 28px;
+  border-radius: 0px;
+ 
+}
+.List3 {
   list-style-type: decimal;
   display: inline;
   border-left: 5px solid rgb(173, 0, 0);
@@ -118,7 +146,17 @@ header li {
   padding-top: 10px;
   padding-left: 10px;
 }
-.Steckbriefüberschrift{
+.Steckbriefüberschrift1{
+  display: inline;
+  text-align: center;
+  margin: 10px 77px 10px 77px;
+}   
+.Steckbriefüberschrift2{
+  display: inline;
+  text-align: center;
+  margin: 10px 77px 10px 77px;
+}   
+.Steckbriefüberschrift3{
   display: inline;
   text-align: center;
   margin: 10px 77px 10px 77px;
@@ -281,8 +319,6 @@ video {
 #Container{
   padding-left: 10px;
   width: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
 }
 #mess {
   padding-left: 10px;
@@ -310,6 +346,7 @@ header>ol:hover {
   }
   #Background2{
     width: 100%;
+    height: fit-content;
   }
   div.Museum{
     height: fit-content;
@@ -350,18 +387,52 @@ header>ol:hover {
     width: 90%;
     margin: 5%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
-  .List {
+  .List1 {
     width: 80%;
     margin: 4%;
+    order: 2;
   }
-  .Steckbriefüberschrift{
+  .List2 {
+    width: 80%;
+    margin: 4%;
+    order: 4;
+  }
+  .List3 {
+    width: 80%;
+    margin: 4%;
+    order: 6;
+  }
+  .Steckbriefüberschrift1{
     display:block;
     border-left-width: 2px;
     border-top-width: 2px;
     border-right-width: 2px;
     border-bottom-width: 2px;
     border-color: black;
+    order: 1;
+  }   
+  .Steckbriefüberschrift2{
+    display:block;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+    order: 3;
+  }   
+  .Steckbriefüberschrift3{
+    display:block;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+    order: 5;
   }   
   header ol{
     width: 100%;
