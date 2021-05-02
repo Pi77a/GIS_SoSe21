@@ -1,11 +1,25 @@
 "use strict";
 function a1() {
+    let x = "Alles"; //2. x wird auf "Alles " gesetzt
+    console.log(x); //3. x wird in der Konsole ausgegeben
+    func1(); //4. func 1 wird aufgerufen
+    console.log("Logo!"); //6. Der string "Logo!" wird in der Konsole ausgegeben
+}
+a1(); //1. function a1 wird aufgerufen
+function func1() {
+    console.log("Klar?"); //5. Der string "Klar?" wird in der Konsole ausgegeben 
+}
+/* a) Variablennamen können einzelne Buchstaben sein. Hier ist es auch egal, ob man kleine oder große Buchstaben benutzt.
+      Wenn der Variablennamen länger ist, muss der Variablennamen nur mit kleinen Buchstaben oder einem "_" beginnen.
+      Auch darf "_" als einziges Sonderzeichen für Variablennamen verwendet werden.
+*/
+function a2() {
     let x = "Alles ";
     func21();
     func12();
     console.log(x + "Logo!");
 }
-a1();
+a2();
 function func12() {
     let x = "Alles ";
     console.log(x + "Klar?");
