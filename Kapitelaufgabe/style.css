@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+}
+h2 {
+    margin-left: 34%;
+    margin-right: 34%;
+}
+p{
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px;
+    border-top-width: 1px;
+    margin: 0px;
+    height: 30px;
+    
+}
+#gallery{
+    display: flex;
+    width: 1100px;
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 4px 5px 5px grey;
+    border-width: 0px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.pic {
+    width: 245px;
+    margin: 1%;
+    border-style: solid;
+    border-width: 1px;
+}
+.pic:hover {
+    filter: opacity(90%);
+    background-color: rgb(182, 180, 180);
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    margin: 1%;
+}
+#yourChoice{
+    display: flex;
+    width: 1100px;
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 4px 5px 5px grey;
+    border-width: 0px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.choicegallery{
+    width: 245px;
+    margin: 1%;
+    border-style: solid;
+    border-width: 1px;
+}
+.final{
+    display: flex;
+    width: 1100px;
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 4px 5px 5px grey;
+    border-width: 0px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+

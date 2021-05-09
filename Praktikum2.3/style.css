@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+#mainDiv{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+}
+button {
+    width: 299px;
+    height: 80px;
+}
