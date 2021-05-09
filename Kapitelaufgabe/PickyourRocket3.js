@@ -34,7 +34,6 @@ var RocketBot;
         divblueBottom.style.backgroundColor = "white";
         choice = "yellow";
     }
-    RocketBot.choicebottom = choice;
     function confirmationtotal() {
         let confirmedChoice = choice;
         console.log(confirmedChoice);

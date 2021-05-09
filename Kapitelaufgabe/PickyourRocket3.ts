@@ -33,7 +33,6 @@ namespace RocketBot {
         divblueBottom.style.backgroundColor = "white";
         choice = "yellow";
     }
-    export var choicebottom: string = choice;
     function confirmationtotal(): void {
         let confirmedChoice: string = choice;
         console.log(confirmedChoice);
