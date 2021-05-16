@@ -1,19 +1,19 @@
 
-export namespace KlappBuch {
+namespace KlappBuch {
 
     export interface Rocket {
         imageId: string;
         top: {
-            imageUrl: String;
+            imageUrl: string;
         };
         mid: {
-            imageUrl: String;
+            imageUrl: string;
         };
         bottom: {
-            imageUrl: String;
+            imageUrl: string;
         };
     }
-    export const data: Rocket[] = [
+    export let fullRocket: Rocket[] = [
         {
             imageId: "rocket-blue",
             top: {
@@ -50,14 +50,15 @@ export namespace KlappBuch {
         }, {
             imageId: "rocket-yellow",
             top: {
-                imageUrl: "data/Rocket_red_top.png"
+                imageUrl: "data/Rocket_yellow_top.png"
             },
             mid: {
-                imageUrl: "data/Rocket_red_mid.png"
+                imageUrl: "data/Rocket_yellow_mid.png"
             },
             bottom: {
-                imageUrl: "data/Rocket_red_bottom.png"
+                imageUrl: "data/Rocket_yellow_bottom.png"
             }
         }
     ];
+    export let fullRocketJSON: string = JSON.stringify(fullRocket);
 }

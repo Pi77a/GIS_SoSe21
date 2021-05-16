@@ -1,9 +1,7 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.KlappBuch = void 0;
 var KlappBuch;
 (function (KlappBuch) {
-    KlappBuch.data = [
+    KlappBuch.fullRocket = [
         {
             imageId: "rocket-blue",
             top: {
@@ -40,15 +38,16 @@ var KlappBuch;
         }, {
             imageId: "rocket-yellow",
             top: {
-                imageUrl: "data/Rocket_red_top.png"
+                imageUrl: "data/Rocket_yellow_top.png"
             },
             mid: {
-                imageUrl: "data/Rocket_red_mid.png"
+                imageUrl: "data/Rocket_yellow_mid.png"
             },
             bottom: {
-                imageUrl: "data/Rocket_red_bottom.png"
+                imageUrl: "data/Rocket_yellow_bottom.png"
             }
         }
     ];
-})(KlappBuch = exports.KlappBuch || (exports.KlappBuch = {}));
+    KlappBuch.fullRocketJSON = JSON.stringify(KlappBuch.fullRocket);
+})(KlappBuch || (KlappBuch = {}));
 //# sourceMappingURL=data.js.map
