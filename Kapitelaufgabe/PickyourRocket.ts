@@ -27,6 +27,5 @@ namespace KlappBuch {
             sessionStorage.setItem("0", rocket[i].top.imageUrl);
             window.location.assign("./Rocket_mid.html");
         }
-
     }
 }

@@ -1,6 +1,7 @@
 
 namespace KlappBuch {
     let rocket: Rocket[] = JSON.parse(fullRocketJSON);
+
     for (let i: number = 0; i < rocket.length; i++) {
         let divmid: HTMLDivElement = document.createElement("div");
         divmid.classList.add("pic");
@@ -24,9 +25,7 @@ namespace KlappBuch {
             sessionStorage.setItem("2", rocket[i].mid.imageUrl);
             window.location.assign("./Rocket_bottom.html");
         }
-
     }
-
 
     let imgtopfinal: HTMLImageElement = document.createElement("img");
     let key: string = sessionStorage.key(0);

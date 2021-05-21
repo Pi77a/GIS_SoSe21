@@ -25,7 +25,6 @@ namespace KlappBuch {
             sessionStorage.setItem("3", rocket[i].bottom.imageUrl);
             window.location.assign("./RocketFinished.html");
         }
-
     }
     
     let imgtopfinal: HTMLImageElement = document.createElement("img");

@@ -75,5 +75,6 @@ namespace KlappBuch {
             }
         }
     ];
+    
     export let fullRocketJSON: string = JSON.stringify(fullRocket);
 }
