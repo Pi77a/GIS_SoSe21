@@ -1,6 +1,7 @@
 "use strict";
 var KlappBuch;
 (function (KlappBuch) {
+    console.log(KlappBuch.fullRocketJSON);
     let rocket = JSON.parse(KlappBuch.fullRocketJSON);
     for (let i = 0; i < rocket.length; i++) {
         let divbottom = document.createElement("div");

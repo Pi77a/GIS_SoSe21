@@ -1,4 +1,5 @@
 namespace KlappBuch {
+    console.log(fullRocketJSON);
     let rocket: Rocket[] = JSON.parse(fullRocketJSON);
 
  
