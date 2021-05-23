@@ -24,7 +24,7 @@ async function communicate(_url: RequestInfo): Promise<void> {
     let response: Response = await fetch(_url);
     console.log("Response", response);
     let serverReply: Rocket[] = await response.json();
-    console.log(serverReply[0].top.imageUrl);
+    console.log(serverReply[2].top.imageUrl);
     //console.log(serverReply.text);
     //console.log(serverReply.zweiterText);
 }

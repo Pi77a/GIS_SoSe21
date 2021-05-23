@@ -22,7 +22,7 @@ async function communicate(_url) {
     let response = await fetch(_url);
     console.log("Response", response);
     let serverReply = await response.json();
-    console.log(serverReply[0].top.imageUrl);
+    console.log(serverReply[2].top.imageUrl);
     //console.log(serverReply.text);
     //console.log(serverReply.zweiterText);
 }

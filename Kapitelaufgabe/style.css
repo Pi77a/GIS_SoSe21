@@ -67,11 +67,31 @@ button{
     display: flex;
     width: 400px;
     background-color: white;
-    flex-wrap: wrap;
     box-shadow: 4px 5px 5px grey;
     border-width: 0px;
     justify-content: center;
     margin-bottom: 20px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 1920px;
+    top: 0px;
+    margin-top: -30px;
+}
+#error{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    height: 100px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#finalhead{
+    width: 400px;
 }
 
 
