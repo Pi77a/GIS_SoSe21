@@ -22,7 +22,9 @@ async function communicate(_url) {
     let response = await fetch(_url);
     console.log("Response", response);
     let serverReply = await response.json();
-    console.log(serverReply.gruss);
+    console.log(serverReply[0].top.imageUrl);
+    //console.log(serverReply.text);
+    //console.log(serverReply.zweiterText);
 }
-communicate("https://Pi77a.github.io/GIS_SOSE21/Kapitelaufgabe/data.json");
+communicate("https://pi77a.github.io/GIS_SoSe21/Kapitelaufgabe/data.json");
 //# sourceMappingURL=script.js.map

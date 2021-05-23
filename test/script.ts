@@ -23,14 +23,26 @@ console.log("ende?");
 async function communicate(_url: RequestInfo): Promise<void> {
     let response: Response = await fetch(_url);
     console.log("Response", response);
-    let serverReply: DozentenAntwortVomServer = await response.json();
-    console.log(serverReply.gruss);
+    let serverReply: Rocket[] = await response.json();
+    console.log(serverReply[0].top.imageUrl);
+    //console.log(serverReply.text);
+    //console.log(serverReply.zweiterText);
 }
 
-communicate("https://Pi77a.github.io/GIS_SOSE21/Kapitelaufgabe/data.json");
+communicate("https://pi77a.github.io/GIS_SoSe21/Kapitelaufgabe/data.json");
 
-interface DozentenAntwortVomServer {
-    gruss: string;
-    text: string;
-    zweiterText: string;
+interface Rocket {
+    imageId: string;
+    top: {
+        imageUrl: string;
+        headline: string;
+    };
+    mid: {
+        imageUrl: string;
+        headline: string;
+    };
+    bottom: {
+        imageUrl: string;
+        headline: string;
+    };
 }
