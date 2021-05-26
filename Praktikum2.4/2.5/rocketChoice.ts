@@ -20,6 +20,7 @@ async function serverrequest(): Promise<void> {
     url = url + "?" + query.toString();
     await fetch(url);
     serveranswer(url);
+    console.log(url);
 }
 
 async function serveranswer(_url: RequestInfo): Promise<void> {

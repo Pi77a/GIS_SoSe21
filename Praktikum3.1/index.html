@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Login</h1>
+        <form action="https://gis-example.herokuapp.com" method="get">
+            <input type="text" id="username" name="username" placeholder="Username">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <div class="radio">
+                <input type="radio" id="male" name="gender" class="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" class="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" class="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <input type="date" id="date" name="date">
+            <input type="color" name="color" id="color">
+            <input type="range" id="points" name="points" min="1" max="3" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+            </datalist>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
