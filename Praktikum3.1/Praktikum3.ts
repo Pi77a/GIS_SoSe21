@@ -8,6 +8,7 @@ export namespace P_3_1Server {
         port = 8100;
 
     let server: Http.Server = Http.createServer();
+    serverrequest();
     server.addListener("request", handleRequest);
     server.addListener("listening", handleListen);
     server.listen(port);
@@ -24,7 +25,17 @@ export namespace P_3_1Server {
         _response.write(_request.url);
         _response.end();
         console.log(_request.url);
-        console.log(formData.get("username"));
+        for (const entry of formData) {
+            console.log(entry);
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+        }
+    }
 
+    async function serverrequest(): Promise<void> {
+        let url: string = "https://grundlageninteraktivesysteme.herokuapp.com/";
+        // tslint:disable-next-line: no-any
+        await fetch(url);
+        console.log(url);
     }
 }
