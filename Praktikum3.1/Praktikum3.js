@@ -21,6 +21,7 @@ var P_3_1Server;
         _response.setHeader("Access-Control-Allow-Origin", "*");
         _response.write(_request.url);
         _response.end();
+        console.log(_request.url);
     }
 })(P_3_1Server = exports.P_3_1Server || (exports.P_3_1Server = {}));
 //# sourceMappingURL=Praktikum3.js.map
