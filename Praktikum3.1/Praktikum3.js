@@ -4,6 +4,7 @@ exports.P_3_1Server = void 0;
 const Http = require("http");
 var P_3_1Server;
 (function (P_3_1Server) {
+    let formData = new FormData(document.forms[0]);
     console.log("Starting server");
     let port = Number(process.env.PORT);
     if (!port)
@@ -22,6 +23,7 @@ var P_3_1Server;
         _response.write(_request.url);
         _response.end();
         console.log(_request.url);
+        console.log(formData.get("username"));
     }
 })(P_3_1Server = exports.P_3_1Server || (exports.P_3_1Server = {}));
 //# sourceMappingURL=Praktikum3.js.map
