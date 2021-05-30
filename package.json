@@ -1,5 +1,25 @@
 {
   "devDependencies": {
     "@types/node": "^15.6.1"
-  }
+  },
+  "name": "gissose",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node ./Praktikum3.1/Praktikum3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pi77a/GIS_SoSe21.git"
+  },
+  "author": "Pi77a/Benedict Arndt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pi77a/GIS_SoSe21/issues"
+  },
+  "homepage": "https://github.com/Pi77a/GIS_SoSe21#readme"
 }

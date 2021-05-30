@@ -12,6 +12,7 @@ async function serverrequest() {
     url = url + "?" + query.toString();
     await fetch(url);
     serveranswer(url);
+    console.log(url);
 }
 async function serveranswer(_url) {
     let response = await fetch(_url);
