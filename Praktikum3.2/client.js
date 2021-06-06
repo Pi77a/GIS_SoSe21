@@ -27,6 +27,7 @@ var P_3_2Server;
     }
     async function serveranswerHtml(_url) {
         let _response = await fetch(_url);
+        console.log(_response);
         let divRespond = await _response.json();
         let div = document.createElement("div");
         div.id = "error";
