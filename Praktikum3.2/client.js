@@ -41,8 +41,11 @@ var P_3_2Server;
         paragraph3.innerText = "Password: " + JSON.stringify(divRespond.Password);
         document.getElementById("error").appendChild(paragraph3);
         let paragraph4 = document.createElement("p");
-        paragraph4.innerText = "Date: " + JSON.stringify(divRespond.Date);
+        paragraph4.innerText = "Gender: " + JSON.stringify(divRespond.Gender);
         document.getElementById("error").appendChild(paragraph4);
+        let paragraph5 = document.createElement("p");
+        paragraph5.innerText = "Date: " + JSON.stringify(divRespond.Date);
+        document.getElementById("error").appendChild(paragraph5);
     }
     async function serveranswerJson(_url) {
         let _response = await fetch(_url);

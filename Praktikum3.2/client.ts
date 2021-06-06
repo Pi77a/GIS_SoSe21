@@ -51,11 +51,13 @@ namespace P_3_2Server {
         document.getElementById("error").appendChild(paragraph3);
 
         let paragraph4: HTMLHeadingElement = document.createElement("p");
-        paragraph4.innerText = "Date: " + JSON.stringify(divRespond.Date);
+        paragraph4.innerText = "Gender: " + JSON.stringify(divRespond.Gender);
         document.getElementById("error").appendChild(paragraph4);
 
-
-
+        let paragraph5: HTMLHeadingElement = document.createElement("p");
+        paragraph5.innerText = "Date: " + JSON.stringify(divRespond.Date);
+        document.getElementById("error").appendChild(paragraph5);
+        
 
     }
 
