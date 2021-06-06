@@ -28,9 +28,10 @@ async function serveranswer(_url: RequestInfo): Promise<void> {
     let serverRocket: string = await response.json();
     let diverror: HTMLDivElement = document.createElement("div");
     diverror.id = "error";
+    console.log(serverRocket);
     document.getElementById("header").appendChild(diverror);
     let headlineerror: HTMLHeadingElement = document.createElement("h2");
-    headlineerror.innerText = JSON.stringify(serverRocket.message);
+   // headlineerror.innerText = JSON.stringify(serverRocket.message);
     document.getElementById("error").appendChild(headlineerror);
 }
 

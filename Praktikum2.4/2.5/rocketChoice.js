@@ -19,9 +19,10 @@ async function serveranswer(_url) {
     let serverRocket = await response.json();
     let diverror = document.createElement("div");
     diverror.id = "error";
+    console.log(serverRocket);
     document.getElementById("header").appendChild(diverror);
     let headlineerror = document.createElement("h2");
-    headlineerror.innerText = JSON.stringify(serverRocket.message);
+    // headlineerror.innerText = JSON.stringify(serverRocket.message);
     document.getElementById("error").appendChild(headlineerror);
 }
 let divfinal = document.createElement("div");

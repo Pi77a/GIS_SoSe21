@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@types/node": "^15.6.1"
+    "@types/node": "^15.12.1"
   },
   "name": "gissose",
   "description": "",
@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node ./Praktikum3.1/Praktikum3.js"
+    "start": "node ./Praktikum3.2/server.js"
   },
   "repository": {
     "type": "git",

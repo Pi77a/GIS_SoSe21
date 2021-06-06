@@ -1,7 +1,7 @@
 "use strict";
 var KlappBuch;
 (function (KlappBuch) {
-    communicate("https://pi77a.github.io/GIS_SoSe21/Kapitelaufgabe/data.json");
+    communicate("./Praktikum2.4\2.5/data.json");
     sessionStorage.removeItem("0");
     sessionStorage.removeItem("2");
     sessionStorage.removeItem("3");
