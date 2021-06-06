@@ -34,6 +34,7 @@ namespace P_3_2Server {
 
     async function serveranswerHtml(_url: RequestInfo): Promise<void> {
         let _response: Response = await fetch(_url);
+        console.log(_response);
         let divRespond: string = await _response.json();
         let div: HTMLDivElement = document.createElement("div");
         div.id = "error";
