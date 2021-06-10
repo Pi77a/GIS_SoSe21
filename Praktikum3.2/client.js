@@ -13,8 +13,8 @@ var P_3_2Server;
         let formData = new FormData(document.forms[0]);
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
-        let url = "http://localhost:8100";
-        //let url: string = "https://grundlageninteraktivesysteme.herokuapp.com";
+        //let url: string = "http://localhost:8100";
+        let url = "https://grundlageninteraktivesysteme.herokuapp.com";
         url += "/html?" + query.toString();
         serveranswerHtml(url);
     }
@@ -22,8 +22,8 @@ var P_3_2Server;
         let formData = new FormData(document.forms[0]);
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
-        let url = "http://localhost:8100";
-        //let url: string = "https://grundlageninteraktivesysteme.herokuapp.com";
+        //let url: string = "http://localhost:8100";
+        let url = "https://grundlageninteraktivesysteme.herokuapp.com";
         url += "/json?" + query.toString();
         serveranswerJson(url);
     }
