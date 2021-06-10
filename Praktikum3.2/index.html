@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <div>
+    <div id="login">
         <h1>Login</h1>
         <form>
             <input type="text" id="username" name="Username" placeholder="Username">
             <input type="email" id="email" name="Email" placeholder="E-mail">
             <input type="password" id="password" name="Password" placeholder="Password">
-            <div class="radio">
+            <div id="radio" class="radio">
                 <input type="radio" id="male" name="Gender" class="gender" value="male">
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="Gender" class="gender" value="female">
@@ -30,7 +30,9 @@
             <input id="json" type="button" value="JSON">
         </form>
     </div>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div id="answer"></div>
+    </footer>
 </body>
 
 </html>

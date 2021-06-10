@@ -16,7 +16,8 @@ namespace P_3_2Server {
         let formData: FormData = new FormData(document.forms[0]);
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        let url: string = "https://grundlageninteraktivesysteme.herokuapp.com/";
+        let url: string = "http://localhost:8100";
+        //let url: string = "https://grundlageninteraktivesysteme.herokuapp.com";
         url += "/html?" + query.toString();
         serveranswerHtml(url);
     }
@@ -27,7 +28,8 @@ namespace P_3_2Server {
         let formData: FormData = new FormData(document.forms[0]);
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        let url: string = "https://grundlageninteraktivesysteme.herokuapp.com/";
+        let url: string = "http://localhost:8100";
+        //let url: string = "https://grundlageninteraktivesysteme.herokuapp.com";
         url += "/json?" + query.toString();
         serveranswerJson(url);
     }
@@ -35,31 +37,9 @@ namespace P_3_2Server {
     async function serveranswerHtml(_url: RequestInfo): Promise<void> {
         let _response: Response = await fetch(_url);
         console.log(_response);
-        let divRespond: string = await _response.json();
-        let div: HTMLDivElement = document.createElement("div");
-        div.id = "error";
-        document.getElementById("footer").appendChild(div);
-        let paragraph1: HTMLHeadingElement = document.createElement("p");
-        paragraph1.innerText = "Username: " + JSON.stringify(divRespond.Username);
-        document.getElementById("error").appendChild(paragraph1);
-
-        let paragraph2: HTMLHeadingElement = document.createElement("p");
-        paragraph2.innerText = "E-mail: " + JSON.stringify(divRespond.Email);
-        document.getElementById("error").appendChild(paragraph2);
-
-        let paragraph3: HTMLHeadingElement = document.createElement("p");
-        paragraph3.innerText = "Password: " + JSON.stringify(divRespond.Password);
-        document.getElementById("error").appendChild(paragraph3);
-
-        let paragraph4: HTMLHeadingElement = document.createElement("p");
-        paragraph4.innerText = "Gender: " + JSON.stringify(divRespond.Gender);
-        document.getElementById("error").appendChild(paragraph4);
-
-        let paragraph5: HTMLHeadingElement = document.createElement("p");
-        paragraph5.innerText = "Date: " + JSON.stringify(divRespond.Date);
-        document.getElementById("error").appendChild(paragraph5);
-        
-
+        let divRespond: string = await _response.text();
+        let div: HTMLDivElement = <HTMLDivElement> document.getElementById("answer");
+        div.innerHTML = divRespond;
     }
 
     async function serveranswerJson(_url: RequestInfo): Promise<void> {
