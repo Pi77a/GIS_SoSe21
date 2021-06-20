@@ -10,7 +10,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node ./Praktikum3.2/server.js"
+    "start": "node ./Praktikum3.4/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/Pi77a/GIS_SoSe21#readme",
   "dependencies": {
+    "@types/mongodb": "^3.6.18",
+    "mongodb": "^3.6.9",
     "node-fetch": "^2.6.1"
   }
 }

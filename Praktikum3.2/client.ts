@@ -44,8 +44,8 @@ namespace P_3_2Server {
 
     async function serveranswerJson(_url: RequestInfo): Promise<void> {
         let _response: Response = await fetch(_url);
-        let consoleRespond: JSON = await _response.json();
-        console.log(JSON.stringify(consoleRespond));
+        let consoleRespond: string = await _response.text();
+        console.log(JSON.parse(consoleRespond));
     }
 
 }

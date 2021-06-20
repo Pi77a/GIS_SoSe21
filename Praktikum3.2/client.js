@@ -36,8 +36,8 @@ var P_3_2Server;
     }
     async function serveranswerJson(_url) {
         let _response = await fetch(_url);
-        let consoleRespond = await _response.json();
-        console.log(JSON.stringify(consoleRespond));
+        let consoleRespond = await _response.text();
+        console.log(JSON.parse(consoleRespond));
     }
 })(P_3_2Server || (P_3_2Server = {}));
 //# sourceMappingURL=client.js.map
